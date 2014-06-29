@@ -7,6 +7,13 @@
 //
 
 #import "MSMyScene.h"
+#import "MSAlien.h"
+
+@interface MSMyScene ()
+
+@property (strong, nonatomic) MSAlien *alien;
+
+@end
 
 @implementation MSMyScene
 
@@ -16,14 +23,11 @@
         
         self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        self.alien = [[MSAlien alloc] init];
+        self.alien.position = CGPointMake(self.size.width * 0.5, self.size.height * 0.5);
         
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+        [self addChild:self.alien];
+    
     }
     return self;
 }
@@ -32,17 +36,7 @@
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
-        CGPoint location = [touch locationInNode:self];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
     }
 }
 

@@ -17,13 +17,15 @@
 		3993FC9E1960867200C59FEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3993FC9C1960867200C59FEE /* Main.storyboard */; };
 		3993FCA11960867200C59FEE /* MSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3993FCA01960867200C59FEE /* MSViewController.m */; };
 		3993FCA41960867200C59FEE /* MSMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3993FCA31960867200C59FEE /* MSMyScene.m */; };
-		3993FCA61960867200C59FEE /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3993FCA51960867200C59FEE /* Spaceship.png */; };
 		3993FCA81960867200C59FEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3993FCA71960867200C59FEE /* Images.xcassets */; };
 		3993FCAF1960867200C59FEE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3993FCAE1960867200C59FEE /* XCTest.framework */; };
 		3993FCB01960867200C59FEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3993FC881960867200C59FEE /* Foundation.framework */; };
 		3993FCB11960867200C59FEE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3993FC8C1960867200C59FEE /* UIKit.framework */; };
 		3993FCB91960867200C59FEE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3993FCB71960867200C59FEE /* InfoPlist.strings */; };
 		3993FCBB1960867200C59FEE /* Animating_an_Alien_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3993FCBA1960867200C59FEE /* Animating_an_Alien_ChallengeTests.m */; };
+		3993FCC5196086C900C59FEE /* Alien.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3993FCC4196086C900C59FEE /* Alien.atlas */; };
+		3993FCC8196086E900C59FEE /* MSAlien.m in Sources */ = {isa = PBXBuildFile; fileRef = 3993FCC7196086E900C59FEE /* MSAlien.m */; };
+		3993FCCB1960874900C59FEE /* AlienAnimations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3993FCCA1960874900C59FEE /* AlienAnimations.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,13 +55,16 @@
 		3993FCA01960867200C59FEE /* MSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSViewController.m; sourceTree = "<group>"; };
 		3993FCA21960867200C59FEE /* MSMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSMyScene.h; sourceTree = "<group>"; };
 		3993FCA31960867200C59FEE /* MSMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSMyScene.m; sourceTree = "<group>"; };
-		3993FCA51960867200C59FEE /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		3993FCA71960867200C59FEE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3993FCAD1960867200C59FEE /* Animating an Alien ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Animating an Alien ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3993FCAE1960867200C59FEE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3993FCB61960867200C59FEE /* Animating an Alien ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Animating an Alien ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		3993FCB81960867200C59FEE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3993FCBA1960867200C59FEE /* Animating_an_Alien_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animating_an_Alien_ChallengeTests.m; sourceTree = "<group>"; };
+		3993FCC4196086C900C59FEE /* Alien.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Alien.atlas; sourceTree = "<group>"; };
+		3993FCC6196086E900C59FEE /* MSAlien.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSAlien.h; sourceTree = "<group>"; };
+		3993FCC7196086E900C59FEE /* MSAlien.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSAlien.m; sourceTree = "<group>"; };
+		3993FCCA1960874900C59FEE /* AlienAnimations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AlienAnimations.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +133,11 @@
 				3993FCA01960867200C59FEE /* MSViewController.m */,
 				3993FCA21960867200C59FEE /* MSMyScene.h */,
 				3993FCA31960867200C59FEE /* MSMyScene.m */,
-				3993FCA51960867200C59FEE /* Spaceship.png */,
+				3993FCC6196086E900C59FEE /* MSAlien.h */,
+				3993FCC7196086E900C59FEE /* MSAlien.m */,
+				3993FCC91960871A00C59FEE /* Resources */,
 				3993FCA71960867200C59FEE /* Images.xcassets */,
+				3993FCC4196086C900C59FEE /* Alien.atlas */,
 				3993FC911960867200C59FEE /* Supporting Files */,
 			);
 			path = "Animating an Alien Challenge";
@@ -162,6 +170,14 @@
 				3993FCB71960867200C59FEE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3993FCC91960871A00C59FEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3993FCCA1960874900C59FEE /* AlienAnimations.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +259,9 @@
 			files = (
 				3993FC951960867200C59FEE /* InfoPlist.strings in Resources */,
 				3993FCA81960867200C59FEE /* Images.xcassets in Resources */,
-				3993FCA61960867200C59FEE /* Spaceship.png in Resources */,
 				3993FC9E1960867200C59FEE /* Main.storyboard in Resources */,
+				3993FCC5196086C900C59FEE /* Alien.atlas in Resources */,
+				3993FCCB1960874900C59FEE /* AlienAnimations.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3993FC9B1960867200C59FEE /* MSAppDelegate.m in Sources */,
+				3993FCC8196086E900C59FEE /* MSAlien.m in Sources */,
 				3993FCA11960867200C59FEE /* MSViewController.m in Sources */,
 				3993FCA41960867200C59FEE /* MSMyScene.m in Sources */,
 				3993FC971960867200C59FEE /* main.m in Sources */,
