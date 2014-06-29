@@ -10,4 +10,6 @@
 
 @interface MSAlien : SKSpriteNode
 
+- (void)changeAnimation;
+
 @end

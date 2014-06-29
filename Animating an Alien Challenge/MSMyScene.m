@@ -36,7 +36,7 @@
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
-        
+        [self.alien changeAnimation];
     }
 }
 
